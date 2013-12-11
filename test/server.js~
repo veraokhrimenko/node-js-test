@@ -1,0 +1,17 @@
+var should = require('should');
+var express = require('express');
+var http = require('http');
+var https = require('https');
+var app = express();
+
+describe('App work', function(){
+  describe('app start', function(){
+    it('should create a server', function(){
+      http.createServer(app).should.be.Object
+    })
+  }) 
+
+  describe('app 404', function(){
+    app.get('/notexist')
+  }) 
+})

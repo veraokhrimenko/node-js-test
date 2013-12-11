@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debittor</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery-1.9.1.min.js"></script> 
+    <script src="/javascripts/add_user.js"></script> 
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+    <table>
+      <% for (var i=0; i<data.length; i++) { %>
+        <% var row = data[i].split(',') %>
+          <% if (row.length > 1) { %>
+          <tr>
+            <% for (var k=0; k<row.length; k++) { %>
+              <td> <%= row[k] %></td>
+            <% } %>
+            <td>
+              <span id=<%= i-1 %> class="add_user">add to debitoor</span>
+            </td>
+          </tr>
+        <% } %>   
+      <% } %>
+    </table> 
+  </body>
+</html>

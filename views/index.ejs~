@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debitoor Test</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset='utf-8' />
+  </head>
+  <body>
+    <form action='/upload' method='post' enctype='multipart/form-data' /><input type='file' name='file' ><input type='submit' /></form>
+  </body>
+</html>
